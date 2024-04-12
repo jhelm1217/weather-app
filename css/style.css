@@ -1,3 +1,12 @@
 h1 {
   color: pink;
 }
+
+/* div {
+  font-size: 1rem;
+} */
+body {
+  font-size: calc(16px + .5w);
+  text-align: center;
+}
+
