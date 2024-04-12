@@ -10,9 +10,59 @@
     <!-- project styles -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="bg-primary">
+  <body class="container-fluid bg-white text-center">
     <div id="app">
-      <h1>Hello!</h1>
+      <div class="container">
+        <h1>Forecast For Today!</h1>
+        <label for="City">City:</label>
+        <input type="text" id="cityInput" name="cityInput"> 
+        <button id="button">Get Weather!</button>
+
+        <div class="container text-center">
+          <div class="container d-flex flex-direction-column vstack gap-2 p-5">
+            <div class="border col-md-12 col-6 text-center p-1 bg-warning">City</div>
+            <div id="city" class="border col-md-12 col-6 flex-grow-1 text-center p-5"></div>
+          </div>
+        </div>
+        
+        <div class="container text-center">
+          <div class="container d-flex flex-direction-column vstack gap-2 p-5">
+
+            <div class="border col-md-12 col-6 text-center p-1 bg-warning">Temperature</div>
+              <div class="container hstack gap-3 flex-grow-1">
+                <div id="kelvin" class="column border p-4"></div>
+                <div id="fahrenheit" class="column border p-4"></div>
+                <div id= "celsius" class="column border p-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="container d-flex flex-direction-column vstack gap-2 p-5">
+            <div class="border col-md-12 col-6 text-center p-1 bg-warning">Condition</div>
+            <div id ="condition" class="border col-md-12 col-6 flex-grow-1 text-center p-5"></div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="container d-flex flex-direction-column vstack gap-2 p-5">
+            <div class="border col-md-12 col-6 text-center p-1 bg-warning">Other Info</div>
+            <div class="border col-md-12 col-6 flex-grow-1 text-center p-5">
+              <!-- <i id="icon" class="fa-solid fa-sun"></i>
+              <i id="icon" class="fa-solid fa-moon"></i>
+              <i id="icon" class="fa-solid fa-cloud-sun"></i>              
+              <i id="icon" class="fa-solid fa-cloud-moon"></i>              
+              <i id="icon" class="fa-solid fa-cloud"></i>              
+              <i id="icon" class="fa-solid fa-cloud-showers-heavy"></i>              
+              <i id="icon" class="fa-solid fa-cloud-sun-rain"></i>              
+              <i id="icon" class="fa-solid fa-cloud-moon-rain"></i>              
+              <i id="icon" class="fa-solid fa-bolt-lightning"></i>              
+              <i id="icon" class="fa-solid fa-snowflake"></i>              
+              <i id="icon" class="fa-solid fa-smog"></i>            -->
+              <img src="" id="image">
+             </div>
+          </div>
+        </div>
+      
     </div>
 
     <!-- BootStrap JavaScript -->
